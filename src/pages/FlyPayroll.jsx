@@ -123,10 +123,10 @@ const FlyPayroll = () => {
                         </div>
 
                         <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
-                            <a href="#contact" className="btn btn-primary">
-                                Request a Demo <ArrowRight size={20} />
+                            <a href="https://flyroll.flytowardsdigitalinnovation.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                                Go to FlyRoll App <ArrowRight size={20} />
                             </a>
-                            <a href="#pricing" className="btn btn-outline" style={{ border: '1px solid var(--border)' }}>View Pricing</a>
+                            <a href="#contact" className="btn btn-outline" style={{ border: '1px solid var(--border)' }}>Request a Demo</a>
                         </div>
                     </div>
 
@@ -242,10 +242,10 @@ const FlyPayroll = () => {
                         No biometric device needed. Just intelligent technology powering your workforce.
                     </p>
                     <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                        <a href="https://wa.me/919080999823" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '1.2rem 3rem' }}>
-                            Book a Free Demo <ArrowRight size={20} />
+                        <a href="https://flyroll.flytowardsdigitalinnovation.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '1.2rem 3rem' }}>
+                            Go to FlyRoll App <ArrowRight size={20} />
                         </a>
-                        <a href="mailto:info@flytowards-digital.com" className="btn btn-outline" style={{ padding: '1.2rem 3rem' }}>Request Pricing</a>
+                        <a href="https://wa.me/919080999823" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '1.2rem 3rem' }}>Book a Free Demo</a>
                     </div>
                 </div>
             </section>
