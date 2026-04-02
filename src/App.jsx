@@ -12,10 +12,13 @@ import WebDev from './pages/WebDev';
 import WhatsAppAPI from './pages/WhatsAppAPI';
 import Blog from './pages/Blog';
 import Products from './pages/Products';
+import DigitalMarketing from './pages/DigitalMarketing';
 import FlyBill from './pages/FlyBill';
 import FlyPayroll from './pages/FlyPayroll';
 import SmartCRM from './pages/SmartCRM';
 import Contact from './pages/Contact';
+import Events from './pages/Events';
+import Careers from './pages/Careers';
 import Loader from './components/Loader';
 
 function App() {
@@ -38,11 +41,14 @@ function App() {
                     <Route path="/service" element={<Service />} />
                     <Route path="/web-development" element={<WebDev />} />
                     <Route path="/whatsapp-api" element={<WhatsAppAPI />} />
+                    <Route path="/digital-marketing" element={<DigitalMarketing />} />
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/fly-bill" element={<FlyBill />} />
                     <Route path="/payroll" element={<FlyPayroll />} />
                     <Route path="/smart-crm" element={<SmartCRM />} />
+                    <Route path="/events" element={<Events />} />
+                    <Route path="/careers" element={<Careers />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
                 <Footer />

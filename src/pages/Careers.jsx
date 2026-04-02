@@ -1,0 +1,113 @@
+import { Briefcase, Users, Zap, ArrowRight, Code, Megaphone, PenTool } from 'lucide-react';
+import { useEffect } from 'react';
+
+const Careers = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    const openPositions = [
+        {
+            title: "Senior React Developer",
+            department: "Engineering",
+            location: "Remote / Tenkasi",
+            type: "Full-Time",
+            icon: <Code size={30} color="var(--primary)" />
+        },
+        {
+            title: "Digital Marketing Strategist",
+            department: "Marketing",
+            location: "Hybrid / Tenkasi",
+            type: "Full-Time",
+            icon: <Megaphone size={30} color="var(--secondary)" />
+        },
+        {
+            title: "UI/UX Designer",
+            department: "Design",
+            location: "Remote",
+            type: "Contract",
+            icon: <PenTool size={30} color="var(--accent)" />
+        }
+    ];
+
+    return (
+        <main>
+            <div className="mesh-bg"></div>
+            
+            <section className="hero" style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', paddingTop: '140px' }}>
+                <div style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto' }} data-aos="fade-up">
+                    <span className="section-tag" style={{ justifyContent: 'center', display: 'flex', gap: '8px' }}>
+                        <Users size={18} /> Join Our Tribe
+                    </span>
+                    <h1 className="hero-title" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '1.5rem', lineHeight: 1.2 }}>
+                        Build the Future of <br />
+                        <span className="gradient-text">Digital Innovation</span>
+                    </h1>
+                    <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '2rem', marginInline: 'auto', maxWidth: '700px' }}>
+                        We are fundamentally changing how businesses scale in the digital realm. Join a team of passionate creators, engineers, and marketers dedicated to excellence.
+                    </p>
+                </div>
+            </section>
+
+            <section id="openings" style={{ paddingTop: '2rem', paddingBottom: '6rem' }}>
+                <div className="max-w-1200" style={{ margin: '0 auto', padding: '0 2rem' }}>
+                    <div style={{ textAlign: 'center', marginBottom: '4rem' }} data-aos="fade-up">
+                        <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Open Positions</h2>
+                        <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem' }}>Find your perfect role and make an impact.</p>
+                    </div>
+
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                        {openPositions.map((job, idx) => (
+                            <div key={idx} className="card" data-aos="fade-up" style={{ padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '2rem', transitionDelay: `${0.1 * (idx + 1)}s` }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+                                    <div style={{ background: 'rgba(0, 242, 255, 0.05)', padding: '1rem', borderRadius: '15px' }}>
+                                        {job.icon}
+                                    </div>
+                                    <div>
+                                        <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem', color: 'var(--text-dark)' }}>{job.title}</h3>
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: '15px', color: 'var(--text-muted)', fontSize: '0.9rem', fontWeight: 500 }}>
+                                            <span>{job.department}</span> • <span>{job.location}</span> • <span>{job.type}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button className="btn btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                    Apply Now <ArrowRight size={18} />
+                                </button>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="cta-content" data-aos="zoom-in" style={{
+                        marginTop: '5rem',
+                        padding: '5rem 3rem',
+                        textAlign: 'center',
+                        background: '#0a0a0a',
+                        border: '1px solid rgba(0, 242, 255, 0.2)',
+                        borderRadius: '40px',
+                        position: 'relative',
+                        overflow: 'hidden',
+                        boxShadow: '0 30px 60px rgba(0, 242, 255, 0.15)'
+                    }}>
+                        <div className="glow-aura" style={{ background: 'var(--gradient-primary)', opacity: 0.15, top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '200%', height: '200%' }}></div>
+                        <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                            <div style={{ background: 'rgba(0, 242, 255, 0.05)', padding: '1.5rem', borderRadius: '50%', marginBottom: '1.5rem', border: '1px solid rgba(0, 242, 255, 0.2)' }}>
+                                <Zap size={50} color="var(--primary)" />
+                            </div>
+                            <h3 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'white' }}>
+                                Don't see a <span style={{ color: 'var(--primary)' }}>perfect fit?</span>
+                            </h3>
+                            <p style={{ color: '#cbd5e1', lineHeight: 1.8, fontSize: '1.15rem', marginBottom: '2.5rem', maxWidth: '650px', marginInline: 'auto' }}>
+                                We're constantly evolving and always ready to make room for exceptional talent. If you have unique skills that can drive our digital innovation forward, we want to hear from you.
+                            </p>
+                            <a href="mailto:info@flytowardsdigitalinnovation.com" className="btn btn-primary" style={{ padding: '1.2rem 3rem', fontSize: '1.1rem', background: 'var(--primary)', color: '#000', border: 'none', fontWeight: 700 }}>
+                                Send Your Resume <ArrowRight size={20} style={{ marginLeft: '10px' }} />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    );
+};
+
+export default Careers;

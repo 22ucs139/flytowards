@@ -35,6 +35,7 @@ const Service = () => {
                         <BarChart size={40} color="#00f2ff" style={{ marginBottom: '1.5rem' }} />
                         <h3>Digital Marketing</h3>
                         <p>ROI-driven campaigns across Google, Meta, and LinkedIn to flood your funnel with leads.</p>
+                        <a href="/digital-marketing" className="btn btn-outline" style={{ marginTop: '2rem', fontSize: '0.8rem' }}>Learn More</a>
                     </div>
 
                     <div className="card" data-aos="fade-up">

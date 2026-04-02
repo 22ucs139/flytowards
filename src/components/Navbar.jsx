@@ -33,10 +33,13 @@ const Navbar = () => {
                     <ul className="dropdown-menu">
                         <li><Link to="/web-development">Web Development</Link></li>
                         <li><Link to="/whatsapp-api">WhatsApp Marketing API</Link></li>
+                        <li><Link to="/digital-marketing">Digital Marketing</Link></li>
                         <li><Link to="/service">All Services</Link></li>
                     </ul>
                 </li>
 
+                <li><Link to="/events" className={location.pathname === '/events' ? 'active' : ''}>Events</Link></li>
+                <li><Link to="/careers" className={location.pathname === '/careers' ? 'active' : ''}>Careers</Link></li>
                 <li><Link to="/blog" className={location.pathname === '/blog' ? 'active' : ''}>Blog</Link></li>
                 <li><Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link></li>
             </ul>

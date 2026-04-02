@@ -29,6 +29,8 @@ const Footer = () => {
                     <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                         <li><Link to="/" className="footer-link">Home</Link></li>
                         <li><Link to="/about" className="footer-link">About Us</Link></li>
+                        <li><Link to="/events" className="footer-link">Events</Link></li>
+                        <li><Link to="/careers" className="footer-link">Careers</Link></li>
                         <li><Link to="/blog" className="footer-link">Blog</Link></li>
                         <li><Link to="/contact" className="footer-link">Contact</Link></li>
                     </ul>
@@ -51,6 +53,7 @@ const Footer = () => {
                     <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                         <li><Link to="/web-development" className="footer-link">Web Development</Link></li>
                         <li><Link to="/whatsapp-api" className="footer-link">WhatsApp Marketing API</Link></li>
+                        <li><Link to="/digital-marketing" className="footer-link">Digital Marketing</Link></li>
                         <li><Link to="/service" className="footer-link">All Services</Link></li>
                     </ul>
 
