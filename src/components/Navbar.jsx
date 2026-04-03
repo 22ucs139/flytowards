@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { ChevronDown, Rocket } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 const Navbar = () => {
     const location = useLocation();
@@ -7,8 +7,7 @@ const Navbar = () => {
     return (
         <nav>
             <Link to="/" className="logo">
-                <Rocket size={32} color="#00f2ff" />
-                FLY <span>TOWARDS</span>
+                <img src="/logo.png" alt="Fly Towards Logo" style={{ height: '80px', width: 'auto' }} />
             </Link>
 
             <ul className="nav-menu">

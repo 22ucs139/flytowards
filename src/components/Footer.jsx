@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Rocket, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -8,11 +8,8 @@ const Footer = () => {
 
                 {/* Column 1: Brand & Address */}
                 <div style={{ gridColumn: 'span 1' }}>
-                    <Link to="/" className="logo" style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
-                        <Rocket size={32} color="#00f2ff" />
-                        <h4 style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 950, fontSize: '1.5rem', letterSpacing: '-0.05em', color: 'white', margin: 0 }}>
-                            FLY <span className="gradient-text">TOWARDS</span>
-                        </h4>
+                    <Link to="/" className="logo" style={{ marginBottom: '1.5rem', display: 'block', textDecoration: 'none' }}>
+                        <img src="/logo.png" alt="Fly Towards Logo" style={{ height: '100px', width: 'auto' }} />
                     </Link>
                     <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.8, marginBottom: '2rem' }}>
                         Empowering your growth with our digital expertise. Bridging creativity with technology to boost your visibility and performance.

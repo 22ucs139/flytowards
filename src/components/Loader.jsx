@@ -30,22 +30,18 @@ const Loader = () => {
                     }}
                 >
                     <div style={{ textAlign: 'center' }}>
-                        <motion.div
+                        <motion.img
+                            src="/logo.png"
+                            alt="Fly Towards Logo"
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.5 }}
                             style={{
-                                fontSize: '2.5rem',
-                                fontWeight: 900,
-                                background: 'linear-gradient(135deg, #00f2ff, #ff007a)',
-                                WebkitBackgroundClip: 'text',
-                                backgroundClip: 'text',
-                                WebkitTextFillColor: 'transparent',
-                                fontFamily: "'Outfit', sans-serif",
+                                height: '180px',
+                                width: 'auto',
+                                marginBottom: '1.5rem'
                             }}
-                        >
-                            FLY TOWARDS
-                        </motion.div>
+                        />
                         <motion.div
                             initial={{ y: 10, opacity: 0 }}
                             animate={{ y: 0, opacity: 0.6 }}
