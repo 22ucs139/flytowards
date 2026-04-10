@@ -12,21 +12,21 @@ const Careers = () => {
             department: "Engineering",
             location: "Remote / Tenkasi, Tamil Nadu",
             type: "Full-Time",
-            icon: <Code size={30} color="var(--primary)" />
+            image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop"
         },
         {
             title: "Digital Marketing Strategist",
             department: "Marketing",
             location: "Hybrid / Tenkasi, Tamil Nadu",
             type: "Full-Time",
-            icon: <Megaphone size={30} color="var(--secondary)" />
+            image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop"
         },
         {
-            title: "UI/UX Designer",
-            department: "Design",
+            title: "Web Developer",
+            department: "Engineering",
             location: "Remote",
-            type: "Contract",
-            icon: <PenTool size={30} color="var(--accent)" />
+            type: "Full-Time",
+            image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"
         }
     ];
 
@@ -43,9 +43,12 @@ const Careers = () => {
                         Build the Future of <br />
                         <span className="gradient-text">Digital Innovation</span>
                     </h1>
-                    <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '2rem', marginInline: 'auto', maxWidth: '700px' }}>
+                    <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '3rem', marginInline: 'auto', maxWidth: '700px' }}>
                         We are fundamentally changing how businesses scale in the digital realm. Join a team of passionate creators, engineers, and marketers dedicated to excellence.
                     </p>
+                    <div data-aos="zoom-in" style={{ width: '100%', height: '400px', borderRadius: '30px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.2)', border: '4px solid white' }}>
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="Fly Towards Team" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    </div>
                 </div>
             </section>
 
@@ -60,8 +63,8 @@ const Careers = () => {
                         {openPositions.map((job, idx) => (
                             <div key={idx} className="card" data-aos="fade-up" style={{ padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '2rem', transitionDelay: `${0.1 * (idx + 1)}s` }}>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-                                    <div style={{ background: 'rgba(0, 242, 255, 0.05)', padding: '1rem', borderRadius: '15px' }}>
-                                        {job.icon}
+                                    <div style={{ flexShrink: 0, width: '80px', height: '80px', borderRadius: '15px', overflow: 'hidden', border: '2px solid white', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
+                                        <img src={job.image} alt={job.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                     </div>
                                     <div>
                                         <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem', color: 'var(--text-dark)' }}>{job.title}</h3>

@@ -10,7 +10,7 @@ const Blog = () => {
         {
             title: "1. Establish a Strong Digital Foundation",
             desc: "Every successful digital journey begins with a solid online foundation — your website. Think of it as your company's digital headquarters.",
-            icon: <Layout size={32} color="var(--primary)" />,
+            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
             subsections: [
                 {
                     title: "a. Professional Website Development",
@@ -26,7 +26,7 @@ const Blog = () => {
         {
             title: "2. Leverage Digital Marketing for Visibility",
             desc: "Once your foundation is set, the next step is to drive traffic and awareness. Digital marketing bridges your brand and your audience.",
-            icon: <TrendingUp size={32} color="var(--secondary)" />,
+            image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop",
             subsections: [
                 {
                     title: "a. Search Engine Optimization (SEO)",
@@ -46,7 +46,7 @@ const Blog = () => {
         {
             title: "3. Build a Strong Brand Identity",
             desc: "Your brand is much more than a logo — it's your story, values, and customer experience.",
-            icon: <Target size={32} color="var(--accent)" />,
+            image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop",
             subsections: [
                 {
                     title: "a. Brand Strategy & Design",
@@ -66,7 +66,7 @@ const Blog = () => {
         {
             title: "4. Digital Automation & Integration",
             desc: "Smart businesses grow faster when they automate processes. From CRM systems to billing software, automation saves time.",
-            icon: <Settings size={32} color="var(--primary)" />,
+            image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop",
             subsections: [
                 {
                     title: "a. CRM and Lead Management",
@@ -86,7 +86,7 @@ const Blog = () => {
         {
             title: "5. Engage & Retain Customers",
             desc: "Attracting customers is just the beginning — retaining them is where real growth continuously happens.",
-            icon: <Users size={32} color="var(--secondary)" />,
+            image: "https://images.unsplash.com/photo-1552581232-6822800c62ce?q=80&w=2070&auto=format&fit=crop",
             subsections: [
                 {
                     title: "a. Email & WhatsApp Marketing",
@@ -136,8 +136,8 @@ const Blog = () => {
                     {blogSections.map((section, idx) => (
                         <div key={idx} className="card" data-aos="fade-up" style={{ padding: '3.5rem', transitionDelay: section.delay, borderLeft: `4px solid ${idx % 3 === 0 ? 'var(--primary)' : idx % 3 === 1 ? 'var(--secondary)' : 'var(--accent)'}` }}>
                             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1.5rem', marginBottom: '1.5rem' }}>
-                                <div style={{ background: 'rgba(0, 242, 255, 0.05)', padding: '1rem', borderRadius: '15px' }}>
-                                    {section.icon}
+                                <div style={{ flexShrink: 0, width: '150px', height: '150px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 15px 35px rgba(0,0,0,0.15)', border: '4px solid white' }}>
+                                    <img src={section.image} alt={section.title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }} onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'} />
                                 </div>
                                 <div>
                                     <h2 style={{ fontSize: '2rem', marginBottom: '0.8rem', color: 'var(--text-dark)', lineHeight: 1.3 }}>

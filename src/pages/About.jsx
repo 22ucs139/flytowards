@@ -103,43 +103,43 @@ const About = () => {
                 <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', marginTop: '3rem' }}>
 
                     <div className="card text-center" data-aos="fade-up" style={{ padding: '3rem 2rem' }}>
-                        <div style={{ margin: '0 auto 1.5rem', width: '70px', height: '70px', borderRadius: '50%', background: 'rgba(0, 242, 255, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <TrendingUp size={32} color="var(--primary)" />
+                        <div style={{ margin: '0 auto 1.5rem', width: '100px', height: '100px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}>
+                            <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                         <h4 style={{ fontSize: '1.3rem', marginBottom: '1rem' }}>Digital Marketing & SEO</h4>
                     </div>
 
                     <div className="card text-center" data-aos="fade-up" data-aos-delay="100" style={{ padding: '3rem 2rem' }}>
-                        <div style={{ margin: '0 auto 1.5rem', width: '70px', height: '70px', borderRadius: '50%', background: 'rgba(255, 0, 122, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <Code size={32} color="var(--secondary)" />
+                        <div style={{ margin: '0 auto 1.5rem', width: '100px', height: '100px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}>
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                         <h4 style={{ fontSize: '1.3rem', marginBottom: '1rem' }}>Web & App Development</h4>
                     </div>
 
                     <div className="card text-center" data-aos="fade-up" data-aos-delay="200" style={{ padding: '3rem 2rem' }}>
-                        <div style={{ margin: '0 auto 1.5rem', width: '70px', height: '70px', borderRadius: '50%', background: 'rgba(157, 0, 255, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <Cpu size={32} color="var(--accent)" />
+                        <div style={{ margin: '0 auto 1.5rem', width: '100px', height: '100px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}>
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                         <h4 style={{ fontSize: '1.3rem', marginBottom: '1rem' }}>CRM & Business Software</h4>
                     </div>
 
                     <div className="card text-center" data-aos="fade-up" data-aos-delay="300" style={{ padding: '3rem 2rem' }}>
-                        <div style={{ margin: '0 auto 1.5rem', width: '70px', height: '70px', borderRadius: '50%', background: 'rgba(0, 242, 255, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <Monitor size={32} color="var(--primary)" />
+                        <div style={{ margin: '0 auto 1.5rem', width: '100px', height: '100px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}>
+                            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2036&auto=format&fit=crop" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                         <h4 style={{ fontSize: '1.3rem', marginBottom: '1rem' }}>Billing & Payroll Systems</h4>
                     </div>
 
                     <div className="card text-center" data-aos="fade-up" data-aos-delay="400" style={{ padding: '3rem 2rem' }}>
-                        <div style={{ margin: '0 auto 1.5rem', width: '70px', height: '70px', borderRadius: '50%', background: 'rgba(255, 0, 122, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <MessageSquare size={32} color="var(--secondary)" />
+                        <div style={{ margin: '0 auto 1.5rem', width: '100px', height: '100px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}>
+                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                         <h4 style={{ fontSize: '1.3rem', marginBottom: '1rem' }}>WhatsApp Marketing API</h4>
                     </div>
 
                     <div className="card text-center" data-aos="fade-up" data-aos-delay="500" style={{ padding: '3rem 2rem' }}>
-                        <div style={{ margin: '0 auto 1.5rem', width: '70px', height: '70px', borderRadius: '50%', background: 'rgba(157, 0, 255, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                            <Zap size={32} color="var(--accent)" />
+                        <div style={{ margin: '0 auto 1.5rem', width: '100px', height: '100px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}>
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                         <h4 style={{ fontSize: '1.3rem', marginBottom: '1rem' }}>Growth Strategy & Automation</h4>
                     </div>
@@ -149,28 +149,24 @@ const About = () => {
             {/* Mission & Vision */}
             <section id="mission" style={{ background: 'rgba(255, 0, 122, 0.01)' }}>
                 <div className="grid">
-                    <div className="card text-center" data-aos="fade-up" style={{ padding: '4rem 3rem' }}>
-                        <div className="mb-4" style={{ display: 'flex', justifyContent: 'center' }}>
-                            <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: 'rgba(0, 242, 255, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <Target size={40} color="var(--primary)" />
-                            </div>
+                    <div className="card text-center" data-aos="fade-up" style={{ padding: '6rem 3rem', background: 'url(https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop) center/cover', position: 'relative', overflow: 'hidden' }}>
+                        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8))', zIndex: 0 }}></div>
+                        <div style={{ position: 'relative', zIndex: 1, color: 'white' }}>
+                            <h2 className="mb-4" style={{ fontSize: '3rem', color: 'white' }}>Our Mission</h2>
+                            <p style={{ fontSize: '1.25rem', lineHeight: 1.8, color: '#f0f0f0', maxWidth: '600px', margin: '0 auto' }}>
+                                Our mission is to empower businesses with innovative digital marketing and software solutions that drive real growth and long term value.
+                            </p>
                         </div>
-                        <h2 className="mb-4" style={{ fontSize: '2.5rem' }}>Our Mission</h2>
-                        <p style={{ fontSize: '1.15rem', lineHeight: 1.8, color: 'var(--text-muted)' }}>
-                            Our mission is to empower businesses with innovative digital marketing and software solutions that drive real growth and long term value.
-                        </p>
                     </div>
 
-                    <div className="card text-center" data-aos="fade-up" style={{ transitionDelay: '0.1s', padding: '4rem 3rem' }} id="vision">
-                        <div className="mb-4" style={{ display: 'flex', justifyContent: 'center' }}>
-                            <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: 'rgba(255, 0, 122, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                <Eye size={40} color="var(--secondary)" />
-                            </div>
+                    <div className="card text-center" data-aos="fade-up" style={{ transitionDelay: '0.1s', padding: '6rem 3rem', background: 'url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop) center/cover', position: 'relative', overflow: 'hidden' }} id="vision">
+                        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8))', zIndex: 0 }}></div>
+                        <div style={{ position: 'relative', zIndex: 1, color: 'white' }}>
+                            <h2 className="mb-4" style={{ fontSize: '3rem', color: 'white' }}>Our Vision</h2>
+                            <p style={{ fontSize: '1.25rem', lineHeight: 1.8, color: '#f0f0f0', maxWidth: '600px', margin: '0 auto' }}>
+                                Our vision is to become a trusted digital marketing and technology partner by delivering future ready, scalable, and impactful solutions.
+                            </p>
                         </div>
-                        <h2 className="mb-4" style={{ fontSize: '2.5rem' }}>Our Vision</h2>
-                        <p style={{ fontSize: '1.15rem', lineHeight: 1.8, color: 'var(--text-muted)' }}>
-                            Our vision is to become a trusted digital marketing and technology partner by delivering future ready, scalable, and impactful solutions.
-                        </p>
                     </div>
                 </div>
             </section>

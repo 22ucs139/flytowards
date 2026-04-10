@@ -161,8 +161,8 @@ const Home = () => {
                             <Target size={200} />
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '2.5rem' }}>
-                            <div style={{ background: 'rgba(0, 242, 255, 0.1)', padding: '1.2rem', borderRadius: '20px' }}>
-                                <TrendingUp size={40} color="var(--primary)" />
+                            <div style={{ flexShrink: 0, width: '100px', height: '100px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}>
+                                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <h3 style={{ fontSize: '2.2rem', margin: 0 }}>Digital <br />Marketing</h3>
                         </div>
@@ -183,8 +183,8 @@ const Home = () => {
                             <Code size={200} />
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '2.5rem' }}>
-                            <div style={{ background: 'rgba(255, 0, 122, 0.1)', padding: '1.2rem', borderRadius: '20px' }}>
-                                <MonitorSmartphone size={40} color="var(--secondary)" />
+                            <div style={{ flexShrink: 0, width: '100px', height: '100px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}>
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <h3 style={{ fontSize: '2.2rem', margin: 0 }}>Customised <br />Solutions</h3>
                         </div>
