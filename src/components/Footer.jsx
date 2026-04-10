@@ -16,7 +16,7 @@ const Footer = () => {
                     </p>
                     <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.95rem', color: 'var(--text-muted)' }}>
                         <MapPin size={20} color="var(--primary)" style={{ flexShrink: 0, marginTop: '4px' }} />
-                        <span>Address : vadaku Ratha veethi sankarankovil, Tenkasi 627756</span>
+                        <span>Address : vadaku Ratha veethi sankarankovil, Tenkasi, Tamil Nadu 627756</span>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@ const Footer = () => {
                     <h4 style={{ marginBottom: '1.5rem', fontWeight: 800, color: 'white', fontSize: '1.2rem' }}>Products</h4>
                     <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                         <li><Link to="/fly-bill" className="footer-link">Fly Bill</Link></li>
-                        <li><Link to="/payroll" className="footer-link">FLY PAYROLL</Link></li>
+                        <li><Link to="/payroll" className="footer-link">FLYROLL</Link></li>
                         <li><Link to="/smart-crm" className="footer-link">Smart CRM</Link></li>
                         <li><Link to="/products" className="footer-link">View All Products</Link></li>
                     </ul>
@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
 
             <div style={{ marginTop: '4rem', padding: '2rem 2rem 0', borderTop: '1px solid rgba(255,255,255,0.05)', textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-                Copyright &copy; 2026 flytowardsdigitalinnovation.com | Powered by flytowardsdigitalinnovation.com
+                Copyright &copy; 2025 flytowardsdigitalinnovation.com | Powered by flytowardsdigitalinnovation.com
             </div>
 
             {/* Embedded styles specifically for footer links to keep hover effects clean */}

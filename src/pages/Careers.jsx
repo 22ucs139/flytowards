@@ -10,14 +10,14 @@ const Careers = () => {
         {
             title: "Senior React Developer",
             department: "Engineering",
-            location: "Remote / Tenkasi",
+            location: "Remote / Tenkasi, Tamil Nadu",
             type: "Full-Time",
             icon: <Code size={30} color="var(--primary)" />
         },
         {
             title: "Digital Marketing Strategist",
             department: "Marketing",
-            location: "Hybrid / Tenkasi",
+            location: "Hybrid / Tenkasi, Tamil Nadu",
             type: "Full-Time",
             icon: <Megaphone size={30} color="var(--secondary)" />
         },

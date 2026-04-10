@@ -8,9 +8,9 @@ const Products = () => {
 
     const products = [
         {
-            title: "Fly Roll",
+            title: "FlyRoll",
             subtitle: "Payroll Management Software",
-            description: "Fly Roll is an advanced payroll management system that automates salary processing and employee management.",
+            description: "FlyRoll is an advanced payroll management system that automates salary processing and employee management.",
             icon: <Users size={40} color="var(--secondary)" />,
             features: [
                 "Payroll automation and salary calculation",

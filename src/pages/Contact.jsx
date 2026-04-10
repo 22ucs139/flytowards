@@ -95,7 +95,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 style={{ fontSize: '1.1rem', marginBottom: '0.2rem', fontWeight: 700 }}>Office Address</h4>
-                                        <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', margin: 0, lineHeight: 1.6 }}>Fly Towards Digital Innovation,<br />vadaku Ratha veethi sankarankovil,<br />Tenkasi - 627756</p>
+                                        <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', margin: 0, lineHeight: 1.6 }}>Fly Towards Digital Innovation,<br />vadaku Ratha veethi sankarankovil,<br />Tenkasi, Tamil Nadu - 627756</p>
                                     </div>
                                 </div>
                             </div>

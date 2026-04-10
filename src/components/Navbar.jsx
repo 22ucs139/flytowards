@@ -20,7 +20,7 @@ const Navbar = () => {
                     </Link>
                     <ul className="dropdown-menu">
                         <li><Link to="/fly-bill">Fly Bill</Link></li>
-                        <li><Link to="/payroll">FLY PAYROLL</Link></li>
+                        <li><Link to="/payroll">FLYROLL</Link></li>
                         <li><Link to="/smart-crm">Smart CRM</Link></li>
                     </ul>
                 </li>

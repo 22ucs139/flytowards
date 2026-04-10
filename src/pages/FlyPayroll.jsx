@@ -100,7 +100,7 @@ const FlyPayroll = () => {
                 <div className="grid-2">
                     <div data-aos="fade-up">
                         <span className="section-tag" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                            <Settings size={18} /> Fly PayRoll Ecosystem
+                            <Settings size={18} /> FlyRoll Ecosystem
                         </span>
                         <h1 className="hero-title" style={{ fontSize: 'clamp(2.8rem, 6vw, 4.5rem)', marginBottom: '1.5rem' }}>
                             Fully Automated <br />
@@ -188,7 +188,7 @@ const FlyPayroll = () => {
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                                 {workflow.steps.map((step, sIdx) => (
                                     <div key={sIdx} style={{ display: 'flex', alignItems: 'center', gap: '15px', background: 'rgba(0, 242, 255, 0.03)', padding: '1rem 1.5rem', borderRadius: '15px', border: '1px solid var(--border)' }}>
-                                        <div style={{ background: 'var(--gradient-primary)', color: 'white', width: '30px', height: '30px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold flexShrink: 0' }}>
+                                        <div style={{ background: 'var(--gradient-primary)', color: 'white', width: '30px', height: '30px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>
                                             {sIdx + 1}
                                         </div>
                                         <span style={{ fontWeight: 600, color: 'var(--text-dark)' }}>{step}</span>

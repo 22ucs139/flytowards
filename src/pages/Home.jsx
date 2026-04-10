@@ -9,8 +9,10 @@ const Home = () => {
 
     const digitalMarketingServices = [
         "Search Engine Optimization (SEO)",
-        "Google Ads / Meta ads",
         "Social Media Marketing",
+        "Google Ads / Meta ads",
+        "LinkedIn Marketing",
+        "Digital Marketing Strategy",
         "Branding & Design",
         "WhatsApp Marketing",
         "Video Edits and Production"
@@ -79,12 +81,9 @@ const Home = () => {
             <section className="hero" style={{ minHeight: '90vh', display: 'flex', alignItems: 'center' }}>
                 <div className="grid-2">
                     <div data-aos="fade-up">
-                        <span className="section-tag" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                            <Globe size={18} /> Digital Agency
-                        </span>
-                        <h1 className="hero-title" style={{ fontSize: 'clamp(3rem, 6vw, 5rem)', marginBottom: '1rem', lineHeight: 1.1 }}>
-                            FLY <br />
-                            <span className="gradient-text" style={{ fontSize: 'clamp(3.5rem, 7vw, 6rem)' }}>TOWARDS.</span>
+                        <h1 className="hero-title" style={{ fontSize: 'clamp(3rem, 6vw, 5rem)', marginBottom: '1rem', lineHeight: 1.2 }}>
+                            FLY TOWARDS <br />
+                            <span className="gradient-text" style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)', display: 'block', marginTop: '0.5rem' }}>DIGITAL INNOVATION</span>
                         </h1>
                         <h2 className="mb-4" style={{ fontSize: '1.6rem', fontWeight: 700, opacity: 0.9, lineHeight: 1.4, maxWidth: '600px' }}>
                             Empowering Businesses Through <br /> Digital Marketing & IT Innovation
@@ -124,7 +123,7 @@ const Home = () => {
                     </p>
                 </div>
 
-                <div className="stats-grid-v2 text-center" style={{ justifyContent: 'center', maxWidth: '900px', margin: '0 auto', background: 'var(--bg-white)', padding: '3rem', borderRadius: '30px', border: '1px solid var(--border)', boxShadow: 'var(--shadow)' }} data-aos="fade-up">
+                <div className="stats-grid-v2 text-center" style={{ justifyContent: 'center', width: '100%', margin: '0 auto', background: 'var(--bg-white)', padding: '3.5rem', borderRadius: '30px', border: '1px solid var(--border)', boxShadow: 'var(--shadow)' }} data-aos="fade-up">
                     <div className="stat-item-v2" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <div style={{ background: 'rgba(0, 242, 255, 0.1)', padding: '1rem', borderRadius: '50%', marginBottom: '1rem' }}>
                             <Users size={32} color="var(--primary)" />
@@ -154,7 +153,7 @@ const Home = () => {
                     <h2 style={{ fontSize: '3.5rem' }}>Solutions Targeted <span className="gradient-text">for Growth</span></h2>
                 </div>
 
-                <div className="grid-2 max-w-1200" style={{ margin: '0 auto', gap: '3rem' }}>
+                <div className="grid" style={{ margin: '0 auto', gap: '3rem', width: '100%' }}>
 
                     {/* Marketing Column */}
                     <div className="card" data-aos="fade-right" style={{ padding: '3.5rem', borderTop: '4px solid var(--primary)', position: 'relative', overflow: 'hidden' }}>
@@ -187,7 +186,7 @@ const Home = () => {
                             <div style={{ background: 'rgba(255, 0, 122, 0.1)', padding: '1.2rem', borderRadius: '20px' }}>
                                 <MonitorSmartphone size={40} color="var(--secondary)" />
                             </div>
-                            <h3 style={{ fontSize: '2.2rem', margin: 0 }}>IT <br />Solutions</h3>
+                            <h3 style={{ fontSize: '2.2rem', margin: 0 }}>Customised <br />Solutions</h3>
                         </div>
 
                         <ul style={{ listStyle: 'none', color: 'var(--text-dark)', fontSize: '1.1rem', marginBottom: '2rem' }}>
@@ -232,8 +231,8 @@ const Home = () => {
             {/* Founder Quote */}
             <section>
                 <div className="founder-card" data-aos="zoom-in" style={{ padding: '5rem 3rem', maxWidth: '1000px', margin: '0 auto', position: 'relative' }}>
-                    <div className="founder-img-container" style={{ width: '120px', height: '120px', margin: '-80px auto 2rem', border: '5px solid white', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-                        <img src="https://ui-avatars.com/api/?name=Sanjay+Kumar&background=00f2ff&color=fff&size=512" alt="Mr. SANJAY KUMAR" />
+                    <div className="founder-img-container" style={{ width: '160px', height: '160px', margin: '-100px auto 2rem', border: '5px solid white', boxShadow: '0 10px 30px rgba(0,0,0,0.2)' }}>
+                        <img src="/sanjay.png" alt="Mr. SANJAY KUMAR" style={{ objectPosition: 'top center' }} />
                     </div>
                     <div style={{ textAlign: 'center' }}>
                         <Quote size={50} color="var(--secondary)" style={{ margin: '0 auto 1.5rem', opacity: 0.2 }} />
@@ -246,15 +245,7 @@ const Home = () => {
                 </div>
 
                 {/* Official Partner Badge */}
-                <div data-aos="fade-up" style={{ textAlign: 'center', marginTop: '4rem', maxWidth: '800px', margin: '4rem auto 0' }}>
-                    <div style={{ background: 'var(--bg-white)', border: '1px solid var(--border)', borderRadius: '20px', padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', boxShadow: 'var(--shadow)' }}>
-                        <Shield size={40} color="var(--primary)" />
-                        <h4 style={{ fontSize: '1.4rem', fontWeight: 800 }}>Official Collaboration Partner: FieldUo.com</h4>
-                        <p style={{ color: 'var(--text-muted)' }}>
-                            Fly Towards Digital Innovation is proud to collaborate with FieldUo, a leading platform for smart business solutions. Together, we empower brands with seamless software integration, digital marketing, and IT innovation — helping businesses manage operations more efficiently.
-                        </p>
-                    </div>
-                </div>
+
             </section>
 
             {/* Testimonials */}
