@@ -149,7 +149,7 @@ const FlyPayroll = () => {
             <section id="categories" style={{ background: 'rgba(255, 0, 122, 0.01)' }}>
                 <div style={{ textAlign: 'center', marginBottom: '5rem' }} data-aos="fade-up">
                     <span className="section-tag">Adaptability</span>
-                    <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>Workforce <span className="gradient-text">Categories</span></h2>
+                    <h2 className="responsive-h2">Workforce <span className="gradient-text">Categories</span></h2>
                     <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '700px', margin: '0 auto' }}>
                         Designed to manage diverse work environments seamlessly.
                     </p>
@@ -176,19 +176,19 @@ const FlyPayroll = () => {
             <section id="workflows">
                 <div style={{ textAlign: 'center', marginBottom: '5rem' }} data-aos="fade-up">
                     <span className="section-tag">Step-by-Step</span>
-                    <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>Attendance <span className="gradient-text">Workflows</span></h2>
+                    <h2 className="responsive-h2">Attendance <span className="gradient-text">Workflows</span></h2>
                 </div>
 
                 <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))' }}>
                     {workflows.map((workflow, idx) => (
                         <div key={idx} className="card" data-aos="fade-up" style={{ background: 'var(--bg-white)', position: 'relative' }}>
-                            <h3 style={{ fontSize: '2rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '15px' }}>
-                                {workflow.icon} {workflow.title}
-                            </h3>
+                             <h3 className="responsive-h3" style={{ marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '15px' }}>
+                                 {workflow.icon} {workflow.title}
+                             </h3>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                                 {workflow.steps.map((step, sIdx) => (
-                                    <div key={sIdx} style={{ display: 'flex', alignItems: 'center', gap: '15px', background: 'rgba(0, 242, 255, 0.03)', padding: '1rem 1.5rem', borderRadius: '15px', border: '1px solid var(--border)' }}>
-                                        <div style={{ background: 'var(--gradient-primary)', color: 'white', width: '30px', height: '30px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>
+                                    <div key={sIdx} className="workflow-card">
+                                        <div className="workflow-number">
                                             {sIdx + 1}
                                         </div>
                                         <span style={{ fontWeight: 600, color: 'var(--text-dark)' }}>{step}</span>
@@ -204,18 +204,18 @@ const FlyPayroll = () => {
             <section style={{ background: 'rgba(0, 242, 255, 0.01)' }}>
                 <div style={{ textAlign: 'center', marginBottom: '5rem' }} data-aos="fade-up">
                     <span className="section-tag">Enterprise Grade</span>
-                    <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>Security, Compliance <span className="gradient-text">& Controls</span></h2>
+                    <h2 className="responsive-h2">Security, Compliance <span className="gradient-text">& Controls</span></h2>
                 </div>
 
                 <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))' }}>
                     {controls.map((control, idx) => (
                         <div key={idx} className="card" data-aos="fade-up" style={{ padding: '3rem 2rem' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '1.5rem' }}>
-                                <div style={{ background: 'rgba(0, 242, 255, 0.05)', padding: '1rem', borderRadius: '20px' }}>
-                                    {control.icon}
-                                </div>
-                            </div>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>{control.title}</h3>
+                             <div className="feature-item">
+                                 <div className="feature-icon-box">
+                                     {control.icon}
+                                 </div>
+                                 <h3 className="responsive-h3" style={{ marginBottom: '0' }}>{control.title}</h3>
+                             </div>
                             <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>{control.desc}</p>
                         </div>
                     ))}

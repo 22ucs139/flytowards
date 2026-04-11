@@ -135,12 +135,12 @@ const Blog = () => {
 
                     {blogSections.map((section, idx) => (
                         <div key={idx} className="card" data-aos="fade-up" style={{ padding: '3.5rem', transitionDelay: section.delay, borderLeft: `4px solid ${idx % 3 === 0 ? 'var(--primary)' : idx % 3 === 1 ? 'var(--secondary)' : 'var(--accent)'}` }}>
-                            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1.5rem', marginBottom: '1.5rem' }}>
-                                <div style={{ flexShrink: 0, width: '150px', height: '150px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 15px 35px rgba(0,0,0,0.15)', border: '4px solid white' }}>
-                                    <img src={section.image} alt={section.title} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }} onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'} />
+                            <div className="blog-post-header">
+                                <div className="blog-post-img-box">
+                                    <img src={section.image} alt={section.title} onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.1)'} onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'} />
                                 </div>
                                 <div>
-                                    <h2 style={{ fontSize: '2rem', marginBottom: '0.8rem', color: 'var(--text-dark)', lineHeight: 1.3 }}>
+                                    <h2 className="blog-post-title">
                                         {section.title}
                                     </h2>
                                     <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.7 }}>

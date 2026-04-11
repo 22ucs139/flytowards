@@ -160,11 +160,11 @@ const Home = () => {
                         <div style={{ position: 'absolute', top: '-10%', right: '-5%', opacity: 0.05, transform: 'rotate(15deg)' }}>
                             <Target size={200} />
                         </div>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '2.5rem' }}>
-                            <div style={{ flexShrink: 0, width: '100px', height: '100px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}>
-                                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        <div className="solution-header">
+                            <div className="solution-img-box">
+                                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop" alt="Digital Marketing" />
                             </div>
-                            <h3 style={{ fontSize: '2.2rem', margin: 0 }}>Digital <br />Marketing</h3>
+                            <h3 className="solution-title">Digital <br />Marketing</h3>
                         </div>
 
                         <ul style={{ listStyle: 'none', color: 'var(--text-dark)', fontSize: '1.1rem' }}>
@@ -182,11 +182,11 @@ const Home = () => {
                         <div style={{ position: 'absolute', top: '-10%', right: '-5%', opacity: 0.03, transform: 'rotate(-15deg)' }}>
                             <Code size={200} />
                         </div>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '2.5rem' }}>
-                            <div style={{ flexShrink: 0, width: '100px', height: '100px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}>
-                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        <div className="solution-header">
+                            <div className="solution-img-box">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" alt="Customised Solutions" />
                             </div>
-                            <h3 style={{ fontSize: '2.2rem', margin: 0 }}>Customised <br />Solutions</h3>
+                            <h3 className="solution-title">Customised <br />Solutions</h3>
                         </div>
 
                         <ul style={{ listStyle: 'none', color: 'var(--text-dark)', fontSize: '1.1rem', marginBottom: '2rem' }}>
@@ -229,12 +229,12 @@ const Home = () => {
             </section>
 
             {/* Founder Quote */}
-            <section>
-                <div className="founder-card" data-aos="zoom-in" style={{ padding: '5rem 3rem', maxWidth: '1000px', margin: '0 auto', position: 'relative' }}>
-                    <div className="founder-img-container" style={{ width: '160px', height: '160px', margin: '-100px auto 2rem', border: '5px solid white', boxShadow: '0 10px 30px rgba(0,0,0,0.2)' }}>
-                        <img src="/sanjay.png" alt="Mr. SANJAY KUMAR" style={{ objectPosition: 'top center' }} />
+            <section style={{ paddingTop: '160px' }}>
+                <div className="founder-card" data-aos="zoom-in">
+                    <div className="founder-img-container">
+                        <img src="/sanjay.png" alt="Mr. SANJAY KUMAR" />
                     </div>
-                    <div style={{ textAlign: 'center' }}>
+                    <div>
                         <Quote size={50} color="var(--secondary)" style={{ margin: '0 auto 1.5rem', opacity: 0.2 }} />
                         <p style={{ fontSize: '1.6rem', fontWeight: 500, fontStyle: 'italic', marginBottom: '2.5rem', lineHeight: 1.6, color: 'var(--text-dark)' }}>
                             "Every brand has a story — we’re here to make it reach the world. At Fly Towards, we make that happen through Innovation, strategy and commitment"

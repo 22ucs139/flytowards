@@ -49,13 +49,13 @@ const About = () => {
                             We provide innovative, scalable, and affordable digital solutions for startups, small businesses, and growing enterprises looking to succeed in today’s competitive digital landscape.
                         </p>
 
-                        <div className="grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)', gap: '2rem' }}>
+                        <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem' }}>
                             <div className="stat-item-v2" style={{ padding: '1.5rem', background: '#fff', borderRadius: '20px', border: '1px solid var(--border)', boxShadow: 'var(--shadow)' }}>
-                                <span className="stat-num" style={{ fontSize: '2.5rem' }}>10+</span>
+                                <span className="stat-num" style={{ fontSize: '1.5rem' }}>Multiple</span>
                                 <span className="stat-label">Digital Services</span>
                             </div>
                             <div className="stat-item-v2" style={{ padding: '1.5rem', background: '#fff', borderRadius: '20px', border: '1px solid var(--border)', boxShadow: 'var(--shadow)' }}>
-                                <span className="stat-num" style={{ fontSize: '2.5rem' }}>100+</span>
+                                <span className="stat-num" style={{ fontSize: '1.5rem' }}>Multiple</span>
                                 <span className="stat-label">Projects Delivered</span>
                             </div>
                             <div className="stat-item-v2" style={{ padding: '1.5rem', background: '#fff', borderRadius: '20px', border: '1px solid var(--border)', boxShadow: 'var(--shadow)' }}>

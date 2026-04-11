@@ -95,7 +95,7 @@ const SmartCRM = () => {
             <section id="features" style={{ background: 'rgba(255, 0, 122, 0.01)' }}>
                 <div style={{ textAlign: 'center', marginBottom: '5rem' }} data-aos="fade-up">
                     <span className="section-tag">Powerful Tools</span>
-                    <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>Core CRM <span className="gradient-text">Features</span></h2>
+                    <h2 className="responsive-h2">Core CRM <span className="gradient-text">Features</span></h2>
                     <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '700px', margin: '0 auto' }}>
                         Everything your sales and support teams need to work smarter and faster.
                     </p>
@@ -104,15 +104,12 @@ const SmartCRM = () => {
                 <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
                     {features.map((feature, idx) => (
                         <div key={idx} className="card" data-aos="fade-up" style={{ transitionDelay: feature.delay, padding: '3rem 2.5rem' }}>
-                            <div className="mb-4" style={{
-                                background: 'rgba(0, 242, 255, 0.05)',
-                                padding: '1rem',
-                                borderRadius: '20px',
-                                display: 'inline-block'
-                            }}>
-                                {feature.icon}
+                            <div className="feature-item">
+                                <div className="feature-icon-box">
+                                    {feature.icon}
+                                </div>
+                                <h3 className="responsive-h3" style={{ marginBottom: '0' }}>{feature.title}</h3>
                             </div>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>{feature.title}</h3>
                             <p style={{ color: 'var(--text-muted)', fontSize: '1rem' }}>{feature.description}</p>
                         </div>
                     ))}
@@ -123,7 +120,7 @@ const SmartCRM = () => {
             <section id="workflow">
                 <div style={{ textAlign: 'center', marginBottom: '5rem' }} data-aos="fade-up">
                     <span className="section-tag">Simple Process</span>
-                    <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>How SmartCRM <span className="gradient-text">Works</span></h2>
+                    <h2 className="responsive-h2">How SmartCRM <span className="gradient-text">Works</span></h2>
                 </div>
 
                 <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
@@ -154,12 +151,12 @@ const SmartCRM = () => {
                             }}>
                                 {step.icon}
                             </div>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>
-                                <span style={{ color: idx === 0 ? 'var(--primary)' : idx === 1 ? 'var(--secondary)' : 'var(--accent)', fontWeight: 900, marginRight: '8px' }}>
-                                    {idx + 1}.
-                                </span>
-                                {step.title}
-                            </h3>
+                             <h3 className="responsive-h3" style={{ marginBottom: '1rem' }}>
+                                 <span style={{ color: idx === 0 ? 'var(--primary)' : idx === 1 ? 'var(--secondary)' : 'var(--accent)', fontWeight: 900, marginRight: '8px' }}>
+                                     {idx + 1}.
+                                 </span>
+                                 {step.title}
+                             </h3>
                             <p style={{ color: 'var(--text-muted)' }}>{step.description}</p>
                         </div>
                     ))}

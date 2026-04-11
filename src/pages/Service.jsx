@@ -19,40 +19,40 @@ const Service = () => {
                 <div className="grid">
                     <div className="card" data-aos="fade-up">
                         <Monitor size={40} color="#00f2ff" style={{ marginBottom: '1.5rem' }} />
-                        <h3>Web Development</h3>
+                        <h3 className="responsive-h3">Web Development</h3>
                         <p>High-end, performance-focused web architectures designed for conversion and scale.</p>
                         <a href="/web-development" className="btn btn-outline" style={{ marginTop: '2rem', fontSize: '0.8rem' }}>Learn More</a>
                     </div>
 
                     <div className="card" data-aos="fade-up" style={{ transitionDelay: '0.1s' }}>
                         <MessageCircle size={40} color="#00f2ff" style={{ marginBottom: '1.5rem' }} />
-                        <h3>WhatsApp Marketing</h3>
+                        <h3 className="responsive-h3">WhatsApp Marketing</h3>
                         <p>Automated customer engagement and marketing campaigns at enterprise scale.</p>
                         <a href="/whatsapp-api" className="btn btn-outline" style={{ marginTop: '2rem', fontSize: '0.8rem' }}>Learn More</a>
                     </div>
 
                     <div className="card" data-aos="fade-up" style={{ transitionDelay: '0.2s' }}>
                         <BarChart size={40} color="#00f2ff" style={{ marginBottom: '1.5rem' }} />
-                        <h3>Digital Marketing</h3>
+                        <h3 className="responsive-h3">Digital Marketing</h3>
                         <p>ROI-driven campaigns across Google, Meta, and LinkedIn to flood your funnel with leads.</p>
                         <a href="/digital-marketing" className="btn btn-outline" style={{ marginTop: '2rem', fontSize: '0.8rem' }}>Learn More</a>
                     </div>
 
                     <div className="card" data-aos="fade-up">
                         <Smartphone size={40} color="#00f2ff" style={{ marginBottom: '1.5rem' }} />
-                        <h3>App Development</h3>
+                        <h3 className="responsive-h3">App Development</h3>
                         <p>Sleek, native and cross-platform mobile experiences that users love to engage with.</p>
                     </div>
 
                     <div className="card" data-aos="fade-up" style={{ transitionDelay: '0.1s' }}>
                         <Palette size={40} color="#00f2ff" style={{ marginBottom: '1.5rem' }} />
-                        <h3>Brand Identity</h3>
+                        <h3 className="responsive-h3">Brand Identity</h3>
                         <p>Complete visual storytelling and design systems that make your brand unmistakable.</p>
                     </div>
 
                     <div className="card" data-aos="fade-up" style={{ transitionDelay: '0.2s' }}>
                         <Globe size={40} color="#00f2ff" style={{ marginBottom: '1.5rem' }} />
-                        <h3>Cloud Solutions</h3>
+                        <h3 className="responsive-h3">Cloud Solutions</h3>
                         <p>Scalable cloud infrastructure and hosting services to keep your platform online 24/7.</p>
                     </div>
                 </div>

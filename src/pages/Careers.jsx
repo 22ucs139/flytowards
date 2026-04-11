@@ -61,14 +61,14 @@ const Careers = () => {
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                         {openPositions.map((job, idx) => (
-                            <div key={idx} className="card" data-aos="fade-up" style={{ padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '2rem', transitionDelay: `${0.1 * (idx + 1)}s` }}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-                                    <div style={{ flexShrink: 0, width: '80px', height: '80px', borderRadius: '15px', overflow: 'hidden', border: '2px solid white', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
-                                        <img src={job.image} alt={job.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            <div key={idx} className="card job-card" data-aos="fade-up" style={{ transitionDelay: `${0.1 * (idx + 1)}s` }}>
+                                <div className="job-info-header">
+                                    <div className="job-img-box">
+                                        <img src={job.image} alt={job.title} />
                                     </div>
                                     <div>
-                                        <h3 style={{ fontSize: '1.4rem', marginBottom: '0.4rem', color: 'var(--text-dark)' }}>{job.title}</h3>
-                                        <div style={{ display: 'flex', alignItems: 'center', gap: '15px', color: 'var(--text-muted)', fontSize: '0.9rem', fontWeight: 500 }}>
+                                        <h3 className="job-title">{job.title}</h3>
+                                        <div className="job-meta">
                                             <span>{job.department}</span> • <span>{job.location}</span> • <span>{job.type}</span>
                                         </div>
                                     </div>

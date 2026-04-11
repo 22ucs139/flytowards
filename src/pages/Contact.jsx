@@ -121,7 +121,7 @@ const Contact = () => {
                         <p style={{ color: 'var(--text-muted)', marginBottom: '2.5rem' }}>Fill out the form below and our team will get back to you shortly.</p>
 
                         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                     <label style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-dark)' }}>First Name</label>
                                     <input type="text" required placeholder="John" style={{ padding: '1rem', borderRadius: '10px', border: '1px solid var(--border)', background: 'var(--bg-white)', fontSize: '1rem' }} />

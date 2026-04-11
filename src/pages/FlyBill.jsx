@@ -110,7 +110,7 @@ const FlyBill = () => {
             <section id="challenges" style={{ background: 'rgba(255, 0, 122, 0.01)' }}>
                 <div style={{ textAlign: 'center', marginBottom: '5rem' }} data-aos="fade-up">
                     <span className="section-tag">The Problem</span>
-                    <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>Business Challenges <span className="gradient-text">We Solve</span></h2>
+                    <h2 className="responsive-h2">Business Challenges <span className="gradient-text">We Solve</span></h2>
                     <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '700px', margin: '0 auto' }}>
                         Growing businesses struggle with manual billing, compliance risks, and lack of financial visibility.
                     </p>
@@ -131,7 +131,7 @@ const FlyBill = () => {
             <section id="features">
                 <div style={{ textAlign: 'center', marginBottom: '5rem' }} data-aos="fade-up">
                     <span className="section-tag">Capabilities</span>
-                    <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>Core <span className="gradient-text">Features</span></h2>
+                    <h2 className="responsive-h2">Core <span className="gradient-text">Features</span></h2>
                     <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '700px', margin: '0 auto' }}>
                         Everything you need to run billing operations professionally.
                     </p>
@@ -140,11 +140,11 @@ const FlyBill = () => {
                 <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
                     {features.map((feature, idx) => (
                         <div key={idx} className="card" data-aos="fade-up" style={{ padding: '3rem 2rem' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '1.5rem' }}>
-                                <div style={{ background: 'rgba(0, 242, 255, 0.05)', padding: '1rem', borderRadius: '20px' }}>
+                            <div className="feature-item">
+                                <div className="feature-icon-box">
                                     {feature.icon}
                                 </div>
-                                <h3 style={{ fontSize: '1.4rem', marginBottom: '0' }}>{feature.title}</h3>
+                                <h3 className="responsive-h3" style={{ marginBottom: '0' }}>{feature.title}</h3>
                             </div>
                             <p style={{ color: 'var(--text-muted)' }}>{feature.description}</p>
                         </div>
@@ -156,7 +156,7 @@ const FlyBill = () => {
             <section style={{ background: 'rgba(0, 242, 255, 0.01)' }}>
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }} data-aos="fade-up">
                     <span className="section-tag">Who Uses Fly Bill</span>
-                    <h2 style={{ fontSize: '3rem' }}>Built For <span className="gradient-text">Every Industry</span></h2>
+                    <h2 className="responsive-h2">Built For <span className="gradient-text">Every Industry</span></h2>
                 </div>
 
                 <div className="stats-grid-v2 text-center" style={{ justifyContent: 'center', flexWrap: 'wrap', gap: '2rem' }} data-aos="fade-up">

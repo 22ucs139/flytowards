@@ -156,7 +156,7 @@ const WebDev = () => {
                     </p>
                 </div>
 
-                <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))' }}>
+                <div className="grid">
                     {coreServices.map((service, idx) => (
                         <div key={idx} className="card" data-aos="fade-up" style={{ padding: '3rem 2.5rem', transition: 'all 0.4s ease' }}
                             onMouseEnter={(e) => {
@@ -215,30 +215,20 @@ const WebDev = () => {
 
             {/* Final CTA / Contact */}
             <section id="contact">
-                <div className="cta-content" data-aos="zoom-in" style={{
-                    background: '#fff',
-                    padding: '6rem 4rem',
-                    borderRadius: '40px',
-                    border: '1px solid var(--border)',
-                    boxShadow: 'var(--shadow)',
-                    maxWidth: '1200px',
-                    margin: '0 auto',
-                    position: 'relative',
-                    overflow: 'hidden'
-                }}>
+                <div className="cta-card" data-aos="zoom-in">
                     <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', background: 'var(--gradient-primary)' }}></div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+                    <div className="cta-grid">
                         <div>
                             <span className="section-tag" style={{ justifyContent: 'flex-start' }}>Let’s Discuss Your Project</span>
-                            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, marginBottom: '1.5rem', lineHeight: 1.2 }}>
+                            <h2 className="responsive-h2">
                                 Ready to Build a Website That <span className="gradient-text">Works for Your Business?</span>
                             </h2>
                             <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', marginBottom: '2rem' }}>
                                 Have an idea, a challenge, or an existing website that needs improvement? We’ll help you turn it into a high-performing digital asset.
                             </p>
 
-                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '3rem' }}>
+                            <div className="cta-features-list">
                                 {ctaFeatures.map((feat, idx) => (
                                     <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '1.05rem', fontWeight: 600 }}>
                                         {feat.icon} {feat.text}
@@ -252,8 +242,8 @@ const WebDev = () => {
                         </div>
 
                         <div style={{ display: 'flex', justifyContent: 'center' }}>
-                            <div style={{ background: 'rgba(0, 242, 255, 0.05)', padding: '2rem', borderRadius: '50%', position: 'relative' }}>
-                                <div style={{ background: 'rgba(255, 0, 122, 0.05)', padding: '2rem', borderRadius: '50%' }}>
+                            <div style={{ background: 'rgba(0, 242, 255, 0.05)', padding: '2.5rem', borderRadius: '50%', position: 'relative' }}>
+                                <div style={{ background: 'rgba(255, 0, 122, 0.05)', padding: '2.5rem', borderRadius: '50%' }}>
                                     <Shield size={100} color="var(--primary)" />
                                 </div>
                                 <div className="glow-aura" style={{ borderRadius: '50%' }}></div>
