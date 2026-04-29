@@ -235,6 +235,58 @@ const FlyBill = () => {
                 </div>
             </section>
 
+            {/* Elegant Banner */}
+            <section style={{ 
+                background: 'linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9)), url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop) center/cover fixed',
+                padding: '8rem 2rem',
+                textAlign: 'center',
+                boxShadow: 'inset 0 0 100px rgba(0,0,0,0.5)'
+            }}>
+                <div data-aos="zoom-in" style={{ maxWidth: '800px', margin: '0 auto' }}>
+                    <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: 'white', marginBottom: '1.5rem', fontWeight: 800 }}>Transforming How You <br/> Manage Finances</h2>
+                    <p style={{ fontSize: '1.3rem', color: 'rgba(255,255,255,0.8)', lineHeight: 1.6, marginBottom: '2rem' }}>Step into the future of accounting with our modern, AI-driven billing platform designed specifically to eliminate stress.</p>
+                </div>
+            </section>
+
+            {/* Seamless Workflow Section */}
+            <section style={{ padding: '8rem 0', background: 'var(--bg-white)', position: 'relative', overflow: 'hidden' }}>
+                <div className="grid-2 max-w-1200" style={{ margin: '0 auto', gap: '5rem', alignItems: 'center' }}>
+                    <div data-aos="fade-right">
+                        <span className="section-tag">Seamless Workflow</span>
+                        <h2 className="responsive-h2" style={{ marginBottom: '1.5rem' }}>
+                            Designed for <span className="gradient-text">Efficiency</span>
+                        </h2>
+                        <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', marginBottom: '2.5rem', lineHeight: 1.8 }}>
+                            Experience a billing workflow that feels natural. With Fly Bill, we have eliminated the clutter to give you a pristine, intuitive interface that lets you focus on what really matters—growing your business while we handle the math and compliance.
+                        </p>
+                        <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 2rem 0', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                             <li style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                                 <CheckCircle2 size={24} color="var(--primary)" style={{ flexShrink: 0 }} />
+                                 <span style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--text-dark)' }}>Zero Learning Curve Architecture</span>
+                             </li>
+                             <li style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                                 <CheckCircle2 size={24} color="var(--secondary)" style={{ flexShrink: 0 }} />
+                                 <span style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--text-dark)' }}>Lightning Fast Invoicing Speed</span>
+                             </li>
+                             <li style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                                 <CheckCircle2 size={24} color="var(--accent)" style={{ flexShrink: 0 }} />
+                                 <span style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--text-dark)' }}>Automated GST Returns Generation</span>
+                             </li>
+                        </ul>
+                    </div>
+                    <div data-aos="fade-left" style={{ position: 'relative', padding: '2rem' }}>
+                        <div style={{ position: 'relative', borderRadius: '40px', padding: '1rem', background: 'rgba(255,255,255,0.7)', border: '1px solid var(--border)', boxShadow: '0 30px 60px rgba(0,0,0,0.1)', zIndex: 2 }}>
+                            <img src="https://images.unsplash.com/photo-1620802051798-8df09e6c2718?q=80&w=1000&auto=format&fit=crop" alt="Efficient Workflow" style={{ width: '100%', borderRadius: '30px', objectFit: 'cover' }} />
+                        </div>
+                        {/* Floating elements */}
+                        <div style={{ position: 'absolute', top: '5%', left: '0%', background: 'white', padding: '1.5rem', borderRadius: '25px', boxShadow: '0 15px 40px rgba(0,0,0,0.15)', animation: 'float 5s ease-in-out infinite', zIndex: 3 }}>
+                            <Shield color="var(--primary)" size={35} />
+                        </div>
+                        <div className="glow-aura" style={{ background: 'var(--gradient-primary)', opacity: 0.15, zIndex: 1, top: '20%', left: '10%', width: '120%', height: '120%' }}></div>
+                    </div>
+                </div>
+            </section>
+
             {/* Ideal For Section */}
             <section style={{ background: 'rgba(0, 242, 255, 0.01)', padding: '6rem 0' }}>
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }} data-aos="fade-up">

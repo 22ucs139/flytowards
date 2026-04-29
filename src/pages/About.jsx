@@ -44,7 +44,7 @@ const About = () => {
             {/* About Fly Towards */}
             <section id="about" style={{ position: 'relative', padding: '6rem 0' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8rem', maxWidth: '1200px', margin: '0 auto', padding: '0 2rem' }}>
-                    
+
                     {/* Block 1: About Company */}
                     <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '5rem' }}>
                         <div style={{ flex: '1 1 500px', position: 'relative', minHeight: '500px' }} data-aos="fade-right">
@@ -176,18 +176,23 @@ const About = () => {
                     margin: '0 auto'
                 }}>
                     <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(255, 255, 255, 0.9)', backdropFilter: 'blur(5px)' }}></div>
-                    
+
                     <div style={{ position: 'relative', zIndex: 1 }}>
                         <span className="section-tag" style={{ background: 'white' }}>Let’s Grow Together</span>
                         <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 800, marginBottom: '2rem', color: 'var(--text-dark)' }}>
-                            Looking for digital marketing, <br /><span className="gradient-text">software solutions,</span> or automation?
+                            Ready to Grow Your <span className="gradient-text">Business?</span>
                         </h2>
                         <p style={{ fontSize: '1.25rem', marginBottom: '4rem', color: '#475569', maxWidth: '700px', margin: '0 auto 4rem auto' }}>
-                            We are here to help. Join businesses that have flown towards success with our expert digital strategies.
+                            Don’t just build a website—build a system that works for you.
                         </p>
-                        <a href="/contact" className="btn btn-primary" style={{ padding: '1.5rem 4rem', fontSize: '1.2rem', boxShadow: '0 20px 40px rgba(0,242,255,0.3)' }}>
-                            Get a Free Consultation <ArrowRight size={24} />
-                        </a>
+                        <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                            <Link to="/contact" className="btn btn-primary" style={{ padding: '1.2rem 3rem', fontSize: '1.1rem', boxShadow: '0 10px 30px rgba(0, 242, 255, 0.3)' }}>
+                                Book Free Consultation Now <ArrowRight size={20} />
+                            </Link>
+                            <a href="https://wa.me/919080999823" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ padding: '1.2rem 3rem', fontSize: '1.1rem', borderColor: 'var(--primary)', color: 'var(--primary)', background: 'transparent' }}>
+                                Chat on WhatsApp <MessageSquare size={20} />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>

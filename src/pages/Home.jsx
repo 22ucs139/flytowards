@@ -19,10 +19,11 @@ const Home = () => {
     ];
 
     const itSolutionsServices = [
-        "Web Development",
-        "App Development",
-        "Software & CRM Solutions",
-        "Cloud & Hosting"
+        "Billing Software",
+        "CRM Systems",
+        "Attendance Systems",
+        "Booking Systems",
+        "Inventory Systems"
     ];
 
     const whyTrustUs = [
@@ -37,32 +38,38 @@ const Home = () => {
         {
             quote: "Fly Towards Digital Innovation helped our business go from local visibility to national reach. Their SEO and ad strategy brought us a 250% increase in website leads within 3 months.",
             author: "Priya Sharma",
-            role: "Marketing Manager"
+            role: "Marketing Manager",
+            image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200"
         },
         {
             quote: "Our new website designed by Fly Towards Digital Innovation is fast, modern, and user friendly. Their team perfectly captured our brand and improved our online conversions.",
             author: "Ramesh Kumar",
-            role: "Founder, RK Industries"
+            role: "Founder, RK Industries",
+            image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200"
         },
         {
             quote: "The branding and social media team gave our company a fresh digital identity. From logo to Instagram campaigns, everything looked consistent and professional.",
             author: "Anjali Mehta",
-            role: "Brand Owner"
+            role: "Brand Owner",
+            image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200"
         },
         {
             quote: "We started Google and Meta ads with Fly Towards Digital Innovation, and within weeks our inquiries doubled. The reporting and support team are very transparent and helpful.",
             author: "Neha Raj",
-            role: "Business Consultant"
+            role: "Business Consultant",
+            image: "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?auto=format&fit=crop&q=80&w=200"
         },
         {
             quote: "Their app development service was top notch delivered on time with smooth performance. The app is now helping us manage customers more efficiently.",
             author: "Arun Varma",
-            role: "Product Head"
+            role: "Product Head",
+            image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200"
         },
         {
             quote: "From website creation to SEO and ongoing support, Fly Towards has been our trusted digital partner. Their team truly cares about our business success.",
             author: "Vignesh R",
-            role: "Small Business Owner"
+            role: "Small Business Owner",
+            image: "https://images.unsplash.com/photo-1600878459198-e114c8562625?auto=format&fit=crop&q=80&w=200"
         }
     ];
 
@@ -115,15 +122,38 @@ const Home = () => {
 
             {/* Who We Are */}
             <section id="about" style={{ background: 'rgba(0, 242, 255, 0.01)' }}>
-                <div className="max-w-1000 text-center" data-aos="fade-up" style={{ margin: '0 auto' }}>
-                    <span className="section-tag" style={{ margin: '0 auto 1.5rem' }}>Who We Are</span>
-                    <h2 style={{ fontSize: '3rem', marginBottom: '2rem' }}>Bridging Creativity <span className="gradient-text">with Technology</span></h2>
-                    <p style={{ fontSize: '1.25rem', lineHeight: 1.8, color: 'var(--text-muted)', marginBottom: '4rem' }}>
-                        Fly Towards is a growth focused company offering end-to-end Digital Marketing and IT Solutions. Our mission is to bridge creativity with technology — helping businesses boost visibility, sales, and performance in the digital world.
-                    </p>
+                <div className="grid-2 max-w-1200" style={{ margin: '0 auto', alignItems: 'center', gap: '4rem' }}>
+                    <div data-aos="fade-right">
+                        <div style={{ position: 'relative', padding: '1rem', width: '100%', maxWidth: '500px', margin: '0 auto' }}>
+                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1000" alt="Team Collaboration" style={{ borderRadius: '30px', width: '100%', boxShadow: '0 20px 40px rgba(0,0,0,0.1)', position: 'relative', zIndex: 2 }} />
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="Strategy" style={{ borderRadius: '30px', width: '65%', position: 'absolute', bottom: '-40px', right: '-30px', border: '8px solid var(--bg-white)', zIndex: 3, boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
+                            <div className="glow-aura" style={{ background: 'var(--gradient-primary)', opacity: 0.15, zIndex: 1, top: '10%', right: '-10%', width: '150%', height: '150%' }}></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" style={{ paddingTop: '2rem' }}>
+                        <span className="section-tag" style={{ marginBottom: '1.5rem' }}>Who We Are</span>
+                        <h2 style={{ fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', marginBottom: '1.5rem', lineHeight: 1.2 }}>Bridging Creativity <br/><span className="gradient-text">with Technology</span></h2>
+                        <p style={{ fontSize: '1.2rem', lineHeight: 1.8, color: 'var(--text-muted)', marginBottom: '2rem' }}>
+                            Fly Towards is a growth focused company offering end-to-end Digital Marketing and IT Solutions. Our mission is to bridge creativity with technology — helping businesses boost visibility, sales, and performance in the digital world.
+                        </p>
+                        <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 2rem 0', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                             <li style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                                 <CheckCircle2 size={24} color="var(--primary)" style={{ flexShrink: 0 }} />
+                                 <span style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--text-dark)' }}>Innovative Strategies</span>
+                             </li>
+                             <li style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                                 <CheckCircle2 size={24} color="var(--secondary)" style={{ flexShrink: 0 }} />
+                                 <span style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--text-dark)' }}>Modern Tech Architecture</span>
+                             </li>
+                             <li style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                                 <CheckCircle2 size={24} color="var(--accent)" style={{ flexShrink: 0 }} />
+                                 <span style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--text-dark)' }}>Result-Driven Approach</span>
+                             </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div className="stats-grid-v2 text-center" style={{ justifyContent: 'center', width: '100%', margin: '0 auto', background: 'var(--bg-white)', padding: '3.5rem', borderRadius: '30px', border: '1px solid var(--border)', boxShadow: 'var(--shadow)' }} data-aos="fade-up">
+                <div className="stats-grid-v2 text-center" style={{ marginTop: '7rem', justifyContent: 'center', width: '100%', maxWidth: '1000px', margin: '7rem auto 0', background: 'var(--bg-white)', padding: '3.5rem', borderRadius: '30px', border: '1px solid var(--border)', boxShadow: 'var(--shadow)' }} data-aos="fade-up">
                     <div className="stat-item-v2" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <div style={{ background: 'rgba(0, 242, 255, 0.1)', padding: '1rem', borderRadius: '50%', marginBottom: '1rem' }}>
                             <Users size={32} color="var(--primary)" />
@@ -162,7 +192,7 @@ const Home = () => {
                         </div>
                         <div className="solution-header">
                             <div className="solution-img-box">
-                                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop" alt="Digital Marketing" />
+                                <img src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?q=80&w=2074&auto=format&fit=crop" alt="Digital Marketing" />
                             </div>
                             <h3 className="solution-title">Digital <br />Marketing</h3>
                         </div>
@@ -184,9 +214,9 @@ const Home = () => {
                         </div>
                         <div className="solution-header">
                             <div className="solution-img-box">
-                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" alt="Customised Solutions" />
+                                <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=2072&auto=format&fit=crop" alt="Custom Business Software Solutions" />
                             </div>
-                            <h3 className="solution-title">Customised <br />Solutions</h3>
+                            <h3 className="solution-title">Custom Business <br />Software Solutions</h3>
                         </div>
 
                         <ul style={{ listStyle: 'none', color: 'var(--text-dark)', fontSize: '1.1rem', marginBottom: '2rem' }}>
@@ -207,7 +237,10 @@ const Home = () => {
             </section>
 
             {/* Why Businesses Trust Us */}
-            <section style={{ background: 'rgba(157, 0, 255, 0.02)' }}>
+            <section style={{ 
+                background: 'linear-gradient(rgba(240, 245, 255, 0.95), rgba(255, 240, 250, 0.95)), url(https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop) center/cover fixed',
+                padding: '5rem 0'
+            }}>
                 <div style={{ textAlign: 'center', marginBottom: '5rem' }} data-aos="fade-up">
                     <span className="section-tag" style={{ margin: '0 auto 1.5rem' }}>Core Value</span>
                     <h2 style={{ fontSize: '3rem' }}>Why Businesses <span className="gradient-text">Trust Us</span></h2>
@@ -267,7 +300,7 @@ const Home = () => {
                                 </p>
                             </div>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', borderTop: '1px solid var(--border)', paddingTop: '1.5rem' }}>
-                                <img src={`https://ui-avatars.com/api/?name=${test.author.replace(' ', '+')}&background=random&color=fff`} alt={test.author} style={{ width: '50px', height: '50px', borderRadius: '50%' }} />
+                                <img src={test.image} alt={test.author} style={{ width: '60px', height: '60px', borderRadius: '50%', objectFit: 'cover' }} />
                                 <div>
                                     <h5 style={{ fontSize: '1.1rem', fontWeight: 800, margin: 0 }}>{test.author}</h5>
                                     <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{test.role}</span>
@@ -289,9 +322,17 @@ const Home = () => {
                         <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', marginBottom: '3rem', lineHeight: 1.7 }}>
                             Whether you need a powerful digital marketing strategy or a custom IT solution, we’re ready to help your business grow.
                         </p>
-                        <Link to="/contact" className="btn btn-primary" style={{ padding: '1.2rem 2.5rem' }}>
+                        <Link to="/contact" className="btn btn-primary" style={{ padding: '1.2rem 2.5rem', marginBottom: '3rem', display: 'inline-flex' }}>
                             Start Your Journey <ArrowRight size={20} />
                         </Link>
+                        
+                        <div style={{ position: 'relative', marginTop: '2rem', display: 'none' }} className="faq-img-desktop">
+                            {/* Adding a display: none by default and unhiding via CSS or just relying on layout */}
+                        </div>
+                        <div style={{ position: 'relative', marginTop: '1rem' }}>
+                            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&q=80&w=800" alt="Customer Support" style={{ borderRadius: '24px', width: '100%', boxShadow: 'var(--shadow)', maxHeight: '350px', objectFit: 'cover' }} />
+                            <div className="glow-aura" style={{ background: 'var(--gradient-primary)', opacity: 0.1 }}></div>
+                        </div>
                     </div>
 
                     <div data-aos="fade-left">
@@ -310,33 +351,55 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Gallery / Our Impact */}
+            <section style={{ padding: '5rem 1rem', background: 'var(--bg-white)' }}>
+                <div style={{ textAlign: 'center', marginBottom: '4rem' }} data-aos="fade-up">
+                    <span className="section-tag" style={{ margin: '0 auto 1.5rem' }}>Our Impact</span>
+                    <h2 style={{ fontSize: '3rem' }}>Moments of <span className="gradient-text">Excellence</span></h2>
+                </div>
+                <div className="grid max-w-1200" style={{ margin: '0 auto', gap: '2rem', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
+                    <div style={{ overflow: 'hidden', borderRadius: '30px', boxShadow: 'var(--shadow)' }} data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600" alt="Team Discussion" style={{ width: '100%', height: '300px', objectFit: 'cover', transition: 'transform 0.5s ease' }} onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'} onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'} />
+                    </div>
+                    <div style={{ overflow: 'hidden', borderRadius: '30px', boxShadow: 'var(--shadow)' }} data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600" alt="Business Meeting" style={{ width: '100%', height: '300px', objectFit: 'cover', transition: 'transform 0.5s ease' }} onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'} onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'} />
+                    </div>
+                    <div style={{ overflow: 'hidden', borderRadius: '30px', boxShadow: 'var(--shadow)' }} data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&q=80&w=600" alt="Creative Process" style={{ width: '100%', height: '300px', objectFit: 'cover', transition: 'transform 0.5s ease' }} onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'} onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'} />
+                    </div>
+                </div>
+            </section>
+
             {/* Final CTA / Contact */}
-            <section id="launch">
+            <section id="launch" style={{ padding: '4rem 1rem' }}>
                 <div className="cta-content" data-aos="zoom-in" style={{
                     textAlign: 'center',
-                    background: '#fff',
                     padding: '6rem 3rem',
                     borderRadius: '40px',
-                    border: '1px solid var(--border)',
-                    boxShadow: 'var(--shadow)',
-                    maxWidth: '1000px',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    boxShadow: '0 20px 50px rgba(0,0,0,0.15)',
+                    maxWidth: '1200px',
                     margin: '0 auto',
                     position: 'relative',
-                    overflow: 'hidden'
+                    overflow: 'hidden',
+                    background: 'url(https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?auto=format&fit=crop&q=80&w=1800) center/cover no-repeat'
                 }}>
-                    <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '5px', background: 'var(--gradient-primary)' }}></div>
-                    <span className="section-tag" style={{ margin: '0 auto 1.5rem' }}>Grand Opening Celebration</span>
-                    <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 800, marginBottom: '1rem' }}>
-                        Enjoy Flat <span className="gradient-text">25% OFF</span>
-                    </h2>
-                    <p style={{ fontSize: '1.3rem', margin: '1rem auto 3rem', maxWidth: '600px', color: 'var(--text-muted)' }}>
-                        On all services! This is a limited time launch offer. Ready to build your digital future together? Let's talk.
-                    </p>
-                    <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                        <a href="https://wa.me/919080999823" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '1.2rem 3rem' }}>
-                            Enquire Now <ArrowRight size={20} />
-                        </a>
-                        <Link to="/contact" className="btn btn-outline" style={{ padding: '1.2rem 3rem' }}>Contact Sales</Link>
+                    <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(135deg, rgba(16, 24, 40, 0.9) 0%, rgba(10, 15, 25, 0.95) 100%)', zIndex: 1 }}></div>
+                    
+                    <div style={{ position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <span className="section-tag" style={{ margin: '0 auto 1.5rem', background: 'rgba(255,255,255,0.1)', color: '#fff', border: '1px solid rgba(255,255,255,0.2)' }}>Grand Opening Celebration</span>
+                        <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 800, marginBottom: '1rem', color: '#fff' }}>
+                            Enjoy Flat <span style={{ background: 'var(--gradient-primary)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', textShadow: '0 0 30px rgba(0, 242, 255, 0.3)' }}>25% OFF</span>
+                        </h2>
+                        <p style={{ fontSize: '1.3rem', margin: '1rem auto 3rem', maxWidth: '600px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.6 }}>
+                            On all services! This is a limited time launch offer. Ready to build your digital future together? Let's talk to our experts.
+                        </p>
+                        <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                            <a href="https://wa.me/919080999823" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '1.2rem 3rem', boxShadow: '0 10px 30px rgba(0, 242, 255, 0.3)' }}>
+                                Enquire Now <ArrowRight size={20} />
+                            </a>
+                            <Link to="/contact" className="btn btn-outline" style={{ padding: '1.2rem 3rem', color: '#fff', borderColor: 'rgba(255,255,255,0.3)', background: 'rgba(255,255,255,0.05)' }}>Contact Us</Link>
+                        </div>
                     </div>
                 </div>
             </section>
