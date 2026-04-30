@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -26,8 +26,7 @@ const Footer = () => {
                     <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                         <li><Link to="/" className="footer-link">Home</Link></li>
                         <li><Link to="/about" className="footer-link">About Us</Link></li>
-                        <li><Link to="/events" className="footer-link">Events</Link></li>
-                        <li><Link to="/careers" className="footer-link">Careers</Link></li>
+                        <li><Link to="/gallery" className="footer-link">Gallery</Link></li>
                         <li><Link to="/blog" className="footer-link">Blog</Link></li>
                         <li><Link to="/contact" className="footer-link">Contact</Link></li>
                     </ul>
@@ -55,10 +54,10 @@ const Footer = () => {
                     </ul>
 
                     <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem' }}>
-                        <a href="#" className="social-icon"><Facebook size={18} /></a>
-                        <a href="#" className="social-icon"><Instagram size={18} /></a>
-                        <a href="#" className="social-icon"><Linkedin size={18} /></a>
-                        <a href="#" className="social-icon"><Twitter size={18} /></a>
+                        <a href="https://www.facebook.com/profile.php?id=61574481060238" target="_blank" rel="noopener noreferrer" className="social-icon"><Facebook size={18} /></a>
+                        <a href="https://www.instagram.com/flytowardsdigitalinnovation/" target="_blank" rel="noopener noreferrer" className="social-icon"><Instagram size={18} /></a>
+                        <a href="https://www.linkedin.com/in/sanjay-kumar-k-founder/" target="_blank" rel="noopener noreferrer" className="social-icon"><Linkedin size={18} /></a>
+                        <a href="https://wa.me/919080999823" target="_blank" rel="noopener noreferrer" className="social-icon" title="WhatsApp"><MessageCircle size={18} /></a>
                     </div>
                 </div>
 

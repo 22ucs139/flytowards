@@ -61,11 +61,10 @@ const Navbar = () => {
                     </ul>
                 </li>
 
-                <li onClick={closeMenu}><Link to="/events" className={location.pathname === '/events' ? 'active' : ''}>Events</Link></li>
-                <li onClick={closeMenu}><Link to="/careers" className={location.pathname === '/careers' ? 'active' : ''}>Careers</Link></li>
+                <li onClick={closeMenu}><Link to="/gallery" className={location.pathname === '/gallery' ? 'active' : ''}>Gallery</Link></li>
                 <li onClick={closeMenu}><Link to="/blog" className={location.pathname === '/blog' ? 'active' : ''}>Blog</Link></li>
                 <li onClick={closeMenu}><Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link></li>
-                
+
                 <li className="nav-btn-mobile" onClick={closeMenu}>
                     <Link to="/contact" className="btn btn-primary">Enquire Now</Link>
                 </li>

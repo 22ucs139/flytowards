@@ -17,8 +17,7 @@ import FlyBill from './pages/FlyBill';
 import FlyPayroll from './pages/FlyPayroll';
 import SmartCRM from './pages/SmartCRM';
 import Contact from './pages/Contact';
-import Events from './pages/Events';
-import Careers from './pages/Careers';
+import Gallery from './pages/Gallery';
 import Loader from './components/Loader';
 
 function App() {
@@ -47,8 +46,7 @@ function App() {
                     <Route path="/fly-bill" element={<FlyBill />} />
                     <Route path="/payroll" element={<FlyPayroll />} />
                     <Route path="/smart-crm" element={<SmartCRM />} />
-                    <Route path="/events" element={<Events />} />
-                    <Route path="/careers" element={<Careers />} />
+                    <Route path="/gallery" element={<Gallery />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
                 <Footer />
